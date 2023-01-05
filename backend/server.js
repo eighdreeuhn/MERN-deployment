@@ -7,7 +7,6 @@ const port = process.env.PORT || 4000
 const app = express()
 
 connectDB()
-console.log(process.env)
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
