@@ -3,7 +3,7 @@ mongoose.set('strictQuery', false)
 
 const connectDB = async () => {
     try {
-        const connection = await mongoose.connect(process.env.MONGO_URI)
+        const connection = await mongoose.connect('mongodb+srv://afgioia:afgioia@merncluster.oratvqm.mongodb.net/merntest?retryWrites=true&w=majority')
         console.log(`MongoDB Connected: ${connection.connection.host}`.cyan.underline)
     }
     catch (e) {
